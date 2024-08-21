@@ -15,6 +15,12 @@
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css" />
 
     <!-- Tailwind Integration with DaisyUI-->
     <link
@@ -45,7 +51,70 @@
   </head>
   <body class="font-manrope">
     <!-- Header Section -->
-    <header></header>
+    <header
+      class="max-sm:bg-gradient-to-r max-sm:from-white max-sm:to-transparent sm:bg-gray-50">
+      <nav class="container max-w-6xl mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a
+              class="btn btn-ghost text-3xl font-extrabold hover:bg-transparent">
+              <span
+                class="ml-2 w-8 h-8 bg-primary rounded-full grid place-items-center rotate-45"
+                ><i class="fa-regular fa-arrow-up-long text-black text-base"></i
+              ></span>
+              Rinterio</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold text-black"><a>Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button
+              class="btn max-sm:hidden bg-white text-gray-500 p-2 rounded-full w-12 h-12 mr-4">
+              <i class="fa-light fa-magnifying-glass text-2xl"></i>
+            </button>
+
+            <button
+              class="btn max-sm:hidden bg-white text-gray-500 p-2 rounded-full w-12 h-12 mr-4">
+              <i class="fa-light fa-cart-shopping text-lg"></i>
+            </button>
+
+            <a
+              href="#"
+              class="px-4 py-2 font-extrabold bg-primary mr-4 rounded-full flex items-center text-nowrap max-sm:hidden text-sm"
+              >Book Consult
+              <span
+                class="ml-2 w-7 h-7 bg-black rounded-full grid place-items-center rotate-45"
+                ><i class="fa-regular fa-arrow-up-long text-white"></i></span
+            ></a>
+
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn lg:hidden bg-white p-2 rounded-full w-12 h-12">
+                <i class="fa-sharp fa-light fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow translate-x-0 right-0">
+                <li class="font-bold text-black"><a>Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- Main sections -->
     <main></main>
