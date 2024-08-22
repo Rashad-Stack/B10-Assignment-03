@@ -51,9 +51,8 @@
   </head>
   <body class="font-manrope">
     <!-- Header Section -->
-    <header
-      class="max-sm:bg-gradient-to-r max-sm:from-white max-sm:to-transparent sm:bg-gray-50">
-      <nav class="container max-w-6xl mx-auto">
+    <header class="bg-gradient-to-b from-gray-100 to-white lg:pb-10">
+      <nav class="container max-w-6xl mx-auto max-xl:px-4">
         <div class="navbar">
           <div class="navbar-start">
             <a href="#" class="text-3xl font-extrabold flex items-center gap-2">
@@ -115,14 +114,14 @@
       </nav>
 
       <section
-        class="container max-w-6xl mx-auto max-md:px-4 flex flex-col items-center mt-10">
+        class="container max-w-6xl mx-auto max-xl:px-4 flex flex-col items-center mt-10">
         <div class="max-w-64 sm:max-w-sm md:max-w-md">
           <img
             src="./assets/banner.png"
             alt="a home sweet home"
             class="w-full object-contain" />
         </div>
-        <div class="max-w-80 sm:max-w-lg lg:max-w-3xl space-y-5">
+        <div class="space-y-5 lg:max-w-3xl">
           <h1
             class="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-center px-2">
             A barn house of this design has a striking appearance
@@ -146,7 +145,74 @@
     </header>
 
     <!-- Main sections -->
-    <main></main>
+    <main>
+      <!-- About Us -->
+      <section
+        class="max-lg:bg-gradient-to-b max-lg:from-white max-lg:to-gray-100 lg:bg-gray-100 pt-10">
+        <div
+          class="container max-w-6xl mx-auto max-xl:px-4 flex flex-col lg:flex-row items-center lg:items-stretch gap-5 lg:gap-8">
+          <div class="flex-1 space-y-10">
+            <img
+              src="./assets/Vector.png"
+              alt="vector"
+              class="relative -left-10 hidden lg:block" />
+            <h2
+              class="text-lg font-bold text-center px-5 py-2 rounded-full bg-white text-gray-600 w-fit mx-auto lg:mx-0">
+              <span class="mr-1"
+                ><i class="fa-regular fa-arrow-right-long"></i
+              ></span>
+              About Us
+            </h2>
+
+            <h1
+              class="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-center lg:text-left px-2">
+              We design thoughtful liveable spaces
+            </h1>
+            <p class="text-center text-sm lg:text-left">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+
+            <div class="flex flex-col md:flex-row lg:flex-col gap-10">
+              <div
+                class="flex gap-4 items-start bg-white p-4 rounded-xl text-gray-600">
+                <i class="fa-sharp fa-light fa-city text-4xl lg:text-5xl"></i>
+
+                <div class="space-y-2">
+                  <h3 class="text-base font-bold lg:text-lg">Commercial</h3>
+                  <p class="text-sm">
+                    The barn house captivates with its blend <br />
+                    of rustic charm and modern.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-4 items-start bg-white p-4 rounded-xl text-gray-600">
+                <i
+                  class="fa-sharp fa-light fa-house-chimney text-4xl lg:text-5xl"></i>
+
+                <div class="space-y-2">
+                  <h3 class="text-base lg:text-lg font-bold">Residential</h3>
+                  <p class="text-sm">
+                    The barn house captivates with its blend <br />
+                    of rustic charm and modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 w-full max-h-48 md:max-h-96 lg:max-h-full overflow-hidden rounded-xl">
+            <img
+              src="./assets/Rectangle.png"
+              alt="a home sweet home"
+              class="w-full h-full object-center" />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer section -->
     <footer></footer>
