@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         manrope: "Manrope, ui-serif", // Adds a new `font-display` class
       },
+      backgroundImage: {
+        paper: "url('./assets/bg.jpg')",
+      },
     },
   },
   plugins: [],
