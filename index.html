@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,25 +54,28 @@
   </head>
   <body class="font-manrope bg-gray-100">
     <!-- Header Section -->
-    <header class="bg-gradient-to-b from-gray-200 to-white lg:pb-10">
-      <nav class="container max-w-6xl mx-auto max-xl:px-4">
+    <header class="bg-gradient-to-b from-gray-200 to-white md:pb-16">
+      <nav class="container max-w-6xl mx-auto">
         <div class="navbar">
           <div class="navbar-start">
-            <a href="#" class="text-3xl font-extrabold flex items-center gap-2">
+            <a
+              href="#"
+              class="text-xl md:text-3xl font-extrabold flex items-center gap-2">
               <span
-                class="ml-2 w-8 h-8 bg-primary rounded-full grid place-items-center rotate-45"
-                ><i class="fa-regular fa-arrow-up-long text-black text-base"></i
+                class="ml-2 w-6 h-6 md:w-8 md:h-8 bg-primary rounded-full grid place-items-center rotate-45"
+                ><i
+                  class="fa-regular fa-arrow-up-long text-black text-sm md:text-base"></i
               ></span>
               Rinterio</a
             >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li class="font-bold text-black"><a>Home</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li class="font-bold text-black"><a href="#">Home</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end">
@@ -99,17 +102,17 @@
               <div
                 tabindex="0"
                 role="button"
-                class="btn lg:hidden bg-white p-2 rounded-full w-12 h-12">
-                <i class="fa-sharp fa-light fa-bars text-xl"></i>
+                class="btn lg:hidden bg-white rounded-full w-8 h-8 min-h-8">
+                <i class="fa-sharp fa-light fa-bars text-sm text-gray-500"></i>
               </div>
               <ul
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow translate-x-0 right-0">
-                <li class="font-bold text-black"><a>Home</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li class="font-bold text-black"><a href="#">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -117,7 +120,7 @@
       </nav>
 
       <section
-        class="container max-w-6xl mx-auto max-xl:px-4 flex flex-col items-center mt-10">
+        class="container max-w-6xl mx-auto max-xl:px-4 flex flex-col items-center md:mt-10">
         <div class="max-w-64 sm:max-w-sm md:max-w-md">
           <img
             src="./assets/banner.png"
@@ -150,8 +153,7 @@
     <!-- Main sections -->
     <main>
       <!-- About Us -->
-      <section
-        class="max-lg:bg-gradient-to-b max-lg:from-white max-lg:to-gray-200 lg:bg-gray-100 pt-10">
+      <section id="#about" class="bg-gray-100 py-10 md:py-16">
         <div class="container max-w-6xl mx-auto max-xl:px-4">
           <img
             src="./assets/Vector.png"
@@ -159,9 +161,9 @@
             class="relative -left-10 hidden lg:block my-10" />
           <div
             class="flex flex-col lg:flex-row items-center lg:items-stretch gap-5 lg:gap-8">
-            <div class="flex-1 space-y-10">
+            <div class="flex-1 space-y-5 md:space-y-10">
               <h2
-                class="text-lg font-bold text-center px-5 py-2 rounded-full bg-white text-gray-600 w-fit mx-auto lg:mx-0">
+                class="text-sm md:text-lg font-bold text-center px-5 py-2 rounded-full bg-white text-gray-600 w-fit mx-auto lg:mx-0">
                 <span class="mr-1"
                   ><i class="fa-regular fa-arrow-right-long"></i
                 ></span>
@@ -178,7 +180,8 @@
                 accents.
               </p>
 
-              <div class="flex flex-col md:flex-row lg:flex-col gap-10">
+              <div
+                class="flex flex-col md:flex-row lg:flex-col gap-5 md:gap-10">
                 <div
                   class="flex gap-4 items-start bg-white p-4 rounded-xl text-gray-600">
                   <i class="fa-sharp fa-light fa-city text-4xl lg:text-5xl"></i>
@@ -218,7 +221,7 @@
 
           <!-- Happy client reviews -->
           <div
-            class="mt-24 bg-white rounded-xl grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            class="mt-16 md:mt-24 bg-white rounded-xl grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <!-- Card - 1  -->
             <div class="text-center p-8 space-y-1">
               <i class="fa-light fa-message-lines text-4xl text-gray-500"></i>
@@ -254,12 +257,12 @@
       </section>
 
       <!-- How we works -->
-      <section>
-        <div class="container max-w-6xl mx-auto max-xl:px-4 mt-10">
+      <section id="works" class="lg:pb-16">
+        <div class="container max-w-6xl mx-auto max-xl:px-4">
           <!-- Section title -->
           <div class="space-y-5 md:max-w-2xl mx-auto">
             <h2
-              class="text-lg font-bold text-center px-5 py-2 rounded-full bg-white text-gray-600 w-fit mx-auto">
+              class="text-sm md:text-lg font-bold text-center px-5 py-2 rounded-full bg-white text-gray-600 w-fit mx-auto">
               <span class="mr-1"
                 ><i class="fa-regular fa-arrow-right-long"></i
               ></span>
@@ -327,12 +330,12 @@
       </section>
 
       <!-- Latest works Portfolio -->
-      <section class="lg:bg-white lg:mt-10 lg:py-10 py-2">
+      <section id="portfolio" class="lg:bg-white py-10 lg:py-16">
         <div class="container max-w-6xl mx-auto max-xl:px-4">
           <!-- Section title -->
           <div class="space-y-5 md:max-w-2xl mx-auto">
             <h2
-              class="text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
+              class="text-sm md:text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
               <span class="mr-1"
                 ><i class="fa-regular fa-arrow-right-long"></i
               ></span>
@@ -451,12 +454,12 @@
       </section>
 
       <!-- Article and News -->
-      <section class="lg:mt-10 py-10">
+      <section id="blogs" class="pb-10 lg:py-16">
         <div class="container max-w-6xl mx-auto max-xl:px-4">
           <!-- Section title -->
           <div class="space-y-5 md:max-w-2xl mx-auto">
             <h2
-              class="text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
+              class="text-sm md:text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
               <span class="mr-1"
                 ><i class="fa-regular fa-arrow-right-long"></i
               ></span>
@@ -591,13 +594,124 @@
         </div>
       </section>
 
-      <!-- Contact Us -->
-      <section class="lg:mt-10 py-10 bg-paper bg-cover">
+      <!-- Frequently Ask Questions -->
+      <section id="faq" class="lg:bg-white pb-10 lg:py-16">
         <div class="container max-w-6xl mx-auto max-xl:px-4">
           <!-- Section title -->
           <div class="space-y-5 md:max-w-2xl mx-auto">
             <h2
-              class="text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
+              class="text-sm md:text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
+              <span class="mr-1"
+                ><i class="fa-regular fa-arrow-right-long"></i
+              ></span>
+              FAQ
+            </h2>
+
+            <h1
+              class="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-center px-2">
+              Frequently Ask Questions
+            </h1>
+            <p class="text-center text-sm">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="join join-vertical w-full mt-10">
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-lg font-medium">
+                What services do you offer?
+              </div>
+              <div class="collapse-content">
+                <p class="text-sm">
+                  We offer a range of services including property development,
+                  construction management, and real estate consulting.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">
+                How can I get a quote for my project?
+              </div>
+              <div class="collapse-content text-sm">
+                <p>
+                  You can get a quote by contacting us through our website's
+                  contact form or by calling our customer service number.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">
+                What is the typical timeline for a project?
+              </div>
+              <div class="collapse-content text-sm">
+                <p>
+                  The timeline for a project varies depending on its size and
+                  complexity. We will provide a detailed timeline during the
+                  initial consultation.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">
+                Do you offer financing options?
+              </div>
+              <div class="collapse-content text-sm">
+                <p>
+                  Yes, we offer various financing options to help you fund your
+                  project. Please contact us for more details.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">
+                Can I customize the design of my property?
+              </div>
+              <div class="collapse-content text-sm">
+                <p>
+                  Absolutely! We work closely with our clients to ensure their
+                  vision is realized. Customization options will be discussed
+                  during the planning phase.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-lg font-medium">
+                What areas do you serve?
+              </div>
+              <div class="collapse-content text-sm">
+                <p>
+                  We primarily serve the metropolitan area but are open to
+                  projects in surrounding regions. Please contact us to discuss
+                  your specific location.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us -->
+      <section id="contact" class="py-10 lg:py-16 bg-paper bg-cover">
+        <div class="container max-w-6xl mx-auto max-xl:px-4">
+          <!-- Section title -->
+          <div class="space-y-5 md:max-w-2xl mx-auto">
+            <h2
+              class="text-sm md:text-lg font-bold text-center px-5 py-2 rounded-full bg-primary/30 text-gray-600 w-fit mx-auto">
               <span class="mr-1"
                 ><i class="fa-regular fa-arrow-right-long"></i
               ></span>
@@ -653,7 +767,7 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="bg-black py-10">
+    <footer class="bg-black py-10 lg:py-16">
       <div class="container max-w-6xl mx-auto max-xl:px-4">
         <!-- Section title -->
         <div class="flex flex-col items-center md:max-w-2xl mx-auto gap-4">
